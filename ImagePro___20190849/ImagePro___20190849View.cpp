@@ -1079,31 +1079,31 @@ void CImagePro20190849View::OnMonopologyBinarization()
 	CImagePro20190849Doc* pDoc = GetDocument();
 
 	int x, y;
-	int gray, threshold = 100;
+	int thresh = 128;
 
 	for (y = 0; y < pDoc->imageHeight; y++)
 		for (x = 0; x < pDoc->imageWidth; x++)
 		{
 			if (pDoc->depth == 1)
 			{
-				if (pDoc->inputImg[y][x] > threshold)	pDoc->inputImg[y][x] = 255;
-				else														pDoc->inputImg[y][x] = 0;
+				if (pDoc->inputImg[y][x] > thresh)
+					pDoc->inputImg[y][x] = 255;
+				else
+					pDoc->inputImg[y][x] = 0;
 			}
 			else
-			{
-				if ((pDoc->inputImg[y][3 * x + 0] + pDoc->inputImg[y][3 * x + 1] + pDoc->inputImg[y][3 * x + 2]) / 3 > threshold)
+				if (pDoc->inputImg[y][3 * x + 0] + pDoc->inputImg[y][3 * x + 1] + pDoc->inputImg[y][3 * x + 2] / 3 > thresh)
 				{
-					pDoc->resultImg[y][3 * x + 0] = 255;
-					pDoc->resultImg[y][3 * x + 1] = 255;
-					pDoc->resultImg[y][3 * x + 2] = 255;
+					pDoc->inputImg[y][3 * x + 0] = 255;
+					pDoc->inputImg[y][3 * x + 1] = 255;
+					pDoc->inputImg[y][3 * x + 2] = 255;
 				}
 				else
 				{
-					pDoc->resultImg[y][3 * x + 0] = 0;
-					pDoc->resultImg[y][3 * x + 1] = 0;
-					pDoc->resultImg[y][3 * x + 2] = 0;
+					pDoc->inputImg[y][3 * x + 0] = 0;
+					pDoc->inputImg[y][3 * x + 1] = 0;
+					pDoc->inputImg[y][3 * x + 2] = 0;
 				}
-			}
 		}
 	Invalidate();
 }
