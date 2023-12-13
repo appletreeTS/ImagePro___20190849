@@ -17,6 +17,7 @@
 #include <math.h>
 #include <Vfw.h>
 
+#include "CAngleInputDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -473,12 +474,6 @@ void CImagePro20190849View::OnPixelHistoEqu()
 	Invalidate();
 }
 
-
-
-struct _Min_max_element_t {
-	const void* _Min;
-	const void* _Max;
-};
 
 
 void CImagePro20190849View::OnPixelContrastStretching()
@@ -1498,68 +1493,81 @@ void CImagePro20190849View::OnGeometryAvgSampling()
 void CImagePro20190849View::OnGeometryLotation()
 {
 	CImagePro20190849Doc* pDoc = GetDocument();
+	CAngleInputDlg dlg;
 
-	int x, y, i, j;
-	int angle = 120;		//degree
+	int angle = 30; //dgree 단위로
 	float radian;
-	int Cx, Cy, Oy;
-	int x_source, y_source, xdiff, ydiff;
+	int Hy;
+	int Cx, Cy;
+	int x, y, xdiff, ydiff;
+	int x_source, y_source;
 
-	if (pDoc->gResultImg != NULL)
+
+	dlg.m_iAngle = angle; // Dialog에 뜨는 기본값이 30이 됨
+	if (dlg.DoModal() == IDCANCEL) return;
+	angle = dlg.m_iAngle;
+
+
+
+	radian = PI / 180 * angle;
+	// y의 마지막
+	Hy = pDoc->imageHeight - 1;
+	// 중심점
+	Cx = pDoc->imageWidth / 2;
+	Cy = pDoc->imageHeight / 2;
+
+
+	if (pDoc->gResultImg != NULL) // 할당삭제, 새로 생성 
 	{
-		for (i = 0; i < pDoc->gImageHeight; i++)
+		for (int i = 0; i < pDoc->gImageHeight; i++)
 			free(pDoc->gResultImg[i]);
 		free(pDoc->gResultImg);
 	}
 
-	radian = 2 * PI / 360 * angle;
 	pDoc->gImageWidth = pDoc->imageHeight * fabs(cos(PI / 2 - radian)) + pDoc->imageWidth * fabs(cos(radian));
+	// 회전했을 때 이미지 크기
 	pDoc->gImageHeight = pDoc->imageHeight * fabs(cos(radian)) + pDoc->imageWidth * fabs(cos(PI / 2 - radian));
-	// 메모리 할당
+	// radian = 세타 // fabs 양수로 만듬
+
+
+	//메모리 할당
 	pDoc->gResultImg = (unsigned char**)malloc(pDoc->gImageHeight * sizeof(unsigned char*));
-	for (i = 0; i < pDoc->gImageHeight; i++)
+	for (int i = 0; i < pDoc->gImageHeight; i++)
 	{
+		//inputImg[] : unsigned char 포인터 // malloc(imageWidth * depth) 포인터의 값
 		pDoc->gResultImg[i] = (unsigned char*)malloc(pDoc->gImageWidth * pDoc->depth);
 	}
 
-	// 중심점
-	Cx = pDoc->imageWidth / 2;	Cy = pDoc->imageHeight / 2;
-	//y의 마지막 좌표
-	Oy = pDoc->imageHeight - 1;
 	xdiff = (pDoc->gImageWidth - pDoc->imageWidth) / 2;
 	ydiff = (pDoc->gImageHeight - pDoc->imageHeight) / 2;
+
 
 	for (y = -ydiff; y < pDoc->gImageHeight - ydiff; y++)
 		for (x = -xdiff; x < pDoc->gImageWidth - xdiff; x++)
 		{
-			x_source = (Oy - y - Cy) * sin(radian) + (x - Cx) * cos(radian) + Cx;
-			y_source = Oy - ((Oy - y - Cy) * cos(radian) - (x - Cx) * sin(radian) + Cy);
+			x_source = (Hy - y - Cx) * sin(radian) + (x - Cx) * cos(radian) + Cx;
+			y_source = Hy - ((Hy - y - Cy) * cos(radian) - (x - Cx) * sin(radian) + Cy);
 
 			if (pDoc->depth == 1)
 			{
-				if (x_source<0 || x_source>pDoc->imageWidth - 1 ||
-					y_source<0 || y_source>pDoc->imageHeight - 1)
+				if (x_source<0 || x_source>pDoc->imageWidth - 1 || y_source<0 || y_source>pDoc->imageHeight - 1)
 					pDoc->gResultImg[y + ydiff][x + xdiff] = 255;
 				else
+
 					pDoc->gResultImg[y + ydiff][x + xdiff] = pDoc->inputImg[y_source][x_source];
 			}
-			else
-			{
-				if (x_source<0 || x_source>pDoc->imageWidth - 1 ||
-					y_source<0 || y_source>pDoc->imageHeight - 1)
-				{
+			else {
+				if (x_source<0 || x_source>pDoc->imageWidth - 1 || y_source<0 || y_source>pDoc->imageHeight - 1) {
 					pDoc->gResultImg[y + ydiff][3 * (x + xdiff) + 0] = 255;
 					pDoc->gResultImg[y + ydiff][3 * (x + xdiff) + 1] = 255;
 					pDoc->gResultImg[y + ydiff][3 * (x + xdiff) + 2] = 255;
 				}
-				else
-				{
+				else {
 					pDoc->gResultImg[y + ydiff][3 * (x + xdiff) + 0] = pDoc->inputImg[y_source][3 * x_source + 0];
 					pDoc->gResultImg[y + ydiff][3 * (x + xdiff) + 1] = pDoc->inputImg[y_source][3 * x_source + 1];
 					pDoc->gResultImg[y + ydiff][3 * (x + xdiff) + 2] = pDoc->inputImg[y_source][3 * x_source + 2];
 				}
 			}
-
 		}
 	Invalidate();
 }
