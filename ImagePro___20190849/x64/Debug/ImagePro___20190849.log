@@ -1,0 +1,72 @@
+﻿  ImagePro___20190849View.cpp
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(355,34): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(363,42): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(369,42): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(375,42): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(399,34): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(407,42): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(413,42): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(419,42): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(458,47): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(463,55): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(466,55): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(469,55): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(592,57): warning C4244: '=': 'double'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(596,73): warning C4244: '=': 'double'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(598,73): warning C4244: '=': 'double'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(600,73): warning C4244: '=': 'double'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(680,30): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(680,40): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(680,50): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(681,13): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(681,23): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(681,33): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(682,13): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(682,23): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(682,33): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(709,46): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(722,57): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(723,57): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(724,57): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(803,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(810,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(811,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(812,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(814,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(867,15): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(873,16): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(877,16): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(881,16): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(885,15): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(938,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(945,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(946,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(947,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(949,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1384,15): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1398,41): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1399,43): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1432,46): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1433,46): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1435,45): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1439,54): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1440,54): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1441,53): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1443,54): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1444,54): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1445,53): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1447,54): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1448,54): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1449,53): warning C4244: '=': 'float'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1590,20): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1605,69): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1607,61): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1626,68): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1627,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1794,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1795,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1897,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1904,26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1892,9): warning C4101: 'y' :참조되지 않은 지역 변수입니다.
+C:\Users\ttym7\source\repos\ImagePro___20190849\ImagePro___20190849\ImagePro___20190849View.cpp(1892,6): warning C4101: 'x' :참조되지 않은 지역 변수입니다.
+  ImagePro___20190849.vcxproj -> C:\Users\ttym7\source\repos\ImagePro___20190849\x64\Debug\ImagePro___20190849.exe

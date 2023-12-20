@@ -1024,30 +1024,108 @@ void CImagePro20190849View::OnRegionMedianFiltering()
 	for (y = 1; y < pDoc->imageHeight - 1; y++)
 		for (x = 1; x < pDoc->imageWidth - 1; x++)
 		{
-			n[0] = pDoc->inputImg[y - 1][x - 1];
-			n[1] = pDoc->inputImg[y - 1][x - 0];
-			n[2] = pDoc->inputImg[y - 1][x + 1];
-			n[3] = pDoc->inputImg[y - 0][x - 1];
-			n[4] = pDoc->inputImg[y - 0][x - 0];
-			n[5] = pDoc->inputImg[y - 0][x + 1];
-			n[6] = pDoc->inputImg[y + 1][x - 1];
-			n[7] = pDoc->inputImg[y + 1][x - 0];
-			n[8] = pDoc->inputImg[y + 1][x + 1];
+			if (pDoc->depth == 1)
+			{
+				n[0] = pDoc->inputImg[y - 1][x - 1];
+				n[1] = pDoc->inputImg[y - 1][x + 0];
+				n[2] = pDoc->inputImg[y - 1][x + 1];
+				n[3] = pDoc->inputImg[y - 0][x - 1];
+				n[4] = pDoc->inputImg[y - 0][x + 0];
+				n[5] = pDoc->inputImg[y - 0][x + 1];
+				n[6] = pDoc->inputImg[y + 1][x - 1];
+				n[7] = pDoc->inputImg[y + 1][x + 0];
+				n[8] = pDoc->inputImg[y + 1][x + 1];
 
-			// 버블소팅(오름차순)
-			for (i = 8; i > 0; i--)
-				for (j = 0; j < i; j++)
-				{
-					if (n[j] > n[j + 1])
+				//sorting=오름차순
+				for (i = 8; i > 0; i--)
+					for (j = 0; j < i; j++)
 					{
-						temp = n[j + 1];
-						n[j + 1] = n[j];
-						n[j] = temp;
+						if (n[j] > n[j + 1])
+						{
+							temp = n[j + 1];
+							n[j + 1] = n[j];
+							n[j] = temp;
+						}
 					}
-				}
 
-			pDoc->resultImg[y][x] = n[4];
+				pDoc->resultImg[y][x] = n[4];
+			}
+			else
+			{
+				n[0] = pDoc->inputImg[y - 1][3 * (x - 1) + 0];
+				n[1] = pDoc->inputImg[y - 1][3 * (x + 0) + 0];
+				n[2] = pDoc->inputImg[y - 1][3 * (x + 1) + 0];
+				n[3] = pDoc->inputImg[y - 0][3 * (x - 1) + 0];
+				n[4] = pDoc->inputImg[y - 0][3 * (x + 0) + 0];
+				n[5] = pDoc->inputImg[y - 0][3 * (x + 1) + 0];
+				n[6] = pDoc->inputImg[y + 1][3 * (x - 1) + 0];
+				n[7] = pDoc->inputImg[y + 1][3 * (x + 0) + 0];
+				n[8] = pDoc->inputImg[y + 1][3 * (x + 1) + 0];
+
+				//sorting=오름차순
+				for (i = 8; i > 0; i--)
+					for (j = 0; j < i; j++)
+					{
+						if (n[j] > n[j + 1])
+						{
+							temp = n[j + 1];
+							n[j + 1] = n[j];
+							n[j] = temp;
+						}
+					}
+
+				pDoc->resultImg[y][3 * x + 0] = n[4];
+
+				n[0] = pDoc->inputImg[y - 1][3 * (x - 1) + 1];
+				n[1] = pDoc->inputImg[y - 1][3 * (x + 0) + 1];
+				n[2] = pDoc->inputImg[y - 1][3 * (x + 1) + 1];
+				n[3] = pDoc->inputImg[y - 0][3 * (x - 1) + 1];
+				n[4] = pDoc->inputImg[y - 0][3 * (x + 0) + 1];
+				n[5] = pDoc->inputImg[y - 0][3 * (x + 1) + 1];
+				n[6] = pDoc->inputImg[y + 1][3 * (x - 1) + 1];
+				n[7] = pDoc->inputImg[y + 1][3 * (x + 0) + 1];
+				n[8] = pDoc->inputImg[y + 1][3 * (x + 1) + 1];
+
+				//sorting=오름차순
+				for (i = 8; i > 0; i--)
+					for (j = 0; j < i; j++)
+					{
+						if (n[j] > n[j + 1])
+						{
+							temp = n[j + 1];
+							n[j + 1] = n[j];
+							n[j] = temp;
+						}
+					}
+
+				pDoc->resultImg[y][3 * x + 1] = n[4];
+
+				n[0] = pDoc->inputImg[y - 1][3 * (x - 1) + 2];
+				n[1] = pDoc->inputImg[y - 1][3 * (x + 0) + 2];
+				n[2] = pDoc->inputImg[y - 1][3 * (x + 1) + 2];
+				n[3] = pDoc->inputImg[y - 0][3 * (x - 1) + 2];
+				n[4] = pDoc->inputImg[y - 0][3 * (x + 0) + 2];
+				n[5] = pDoc->inputImg[y - 0][3 * (x + 1) + 2];
+				n[6] = pDoc->inputImg[y + 1][3 * (x - 1) + 2];
+				n[7] = pDoc->inputImg[y + 1][3 * (x + 0) + 2];
+				n[8] = pDoc->inputImg[y + 1][3 * (x + 1) + 2];
+
+				//sorting=오름차순
+				for (i = 8; i > 0; i--)
+					for (j = 0; j < i; j++)
+					{
+						if (n[j] > n[j + 1])
+						{
+							temp = n[j + 1];
+							n[j + 1] = n[j];
+							n[j] = temp;
+						}
+					}
+
+				pDoc->resultImg[y][3 * x + 2] = n[4];
+			}
 		}
+
 	Invalidate();
 }
 
@@ -1454,8 +1532,8 @@ void CImagePro20190849View::OnGeometryAvgSampling()
 	}
 
 	// 전방향 사상
-	for (y = 0; y < pDoc->imageHeight; y += yscale)
-		for (x = 0; x < pDoc->imageWidth; x += xscale)
+	for (y = 0; y < pDoc->imageHeight - yscale; y += yscale)
+		for (x = 0; x < pDoc->imageWidth - xscale; x += xscale)
 		{
 			sum = 0;	rsum = 0; gsum = 0; bsum = 0;
 			for (j = 0; j < yscale; j++)
